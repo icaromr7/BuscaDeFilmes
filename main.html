@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busca de Filmes</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <h1>Icuru's Films</h1>
+            <button id="homeButton">Home</button>
+            <input type="text" id="search" placeholder="Digite o nome do filme">
+            <button id="searchButton" onclick="searchMovie()">Buscar</button>
+            <button id="favoritesButton" onclick="showFavorites()">Mostrar Favoritos</button>
+            <label for="genreSelect">Selecione o gênero:</label>
+            <select id="genreSelect">
+                <option value="">Todos</option>
+            </select>
+        </nav>
+        <main>
+            <section id="result"></section>
+        </main>
+    </div>
+    <div id="loading" style="display: none;">
+        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/b6e0b072897469.5bf6e79950d23.gif" alt="Loading..." width="200px"/>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
